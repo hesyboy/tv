@@ -13,7 +13,7 @@
             @include('admin.layout.sidebar')
         </section>
         <section class="w-10/12 ">
-            <section class=" bg-gray-100">
+            <section class=" bg-gray-50">
                 @include('admin.layout.header')
             </section>
             <section class=" bg-gray-200">

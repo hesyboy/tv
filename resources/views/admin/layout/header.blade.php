@@ -20,9 +20,11 @@
         </div>
         <div>
             <div class="flex items-center">
-                <div class="flex gap-2 items-center">
-                    <img class="bg-indigo-800 rounded-md h-12 w-12 ">
-                    <span class="font-semibold">حسام محمودی</span>
+                <div class="flex gap-2 items-center p-2 bg-indigo-800 text-gray-100 rounded-md">
+                    <span class="flex items-center justify-center text-2xl " href="">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="">حسام محمودی</span>
                     <ion-icon name="caret-down"></ion-icon>
                 </div>
                 {{-- <div class="flex gap-3">
