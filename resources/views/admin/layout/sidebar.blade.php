@@ -1,37 +1,52 @@
-<div class="bg-gray-300 h-screen">
-    <div class="flex flex-col items-center gap-3">
+<div class="bg-gray-300 dark:bg-slate-800 h-screen">
+    <div class="flex flex-col items-center justify-center gap-3">
         {{-- Top Header --}}
-        <div class="w-full flex items-center justify-start gap-3 py-3 px-6 bg-indigo-800">
+        <div class="w-full flex items-center justify-start gap-3 py-3 px-2 bg-slate-900">
             <div class="flex items-center justify-center bg-white p-2 rounded-md shadow-md">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_TV_2015.svg" class="w-10" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_TV_2015.svg" class="w-8" :class="drawer ? 'w-10' : 'w-10' " alt="">
             </div>
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col gap-1" :class="drawer ? '' : 'hidden' ">
                 <div class=" text-lg text-gray-50">
                     شرکت آریاتک
                 </div>
                 <div class="text-xs text-slate-300">
-                    حسام محمودی ، خوش آمدی
+                    حسام محمودی   
                 </div>
             </div>
         </div>
 
         {{-- Menus --}}
-        <div class="w-full flex flex-col gap-3 py-2 px-6 items-start">
+        <div class="w-full flex flex-col gap-3 py-2 px-2 items-center">
 
-            <a class="w-full flex items-center gap-6 text-base p-2 rounded-md bg-gray-100 font-semibold text-gray-800 shadow-md hover:bg-gray-100 duration-150 ">
-                <ion-icon class="text-2xl text-indigo-800" name="grid"></ion-icon>
-                <span class="font-semibold">
+            <a class="flex items-center gap-6 text-base p-2 rounded-md bg-gray-50
+             hover:scale-95 duration-200  cursor-pointer
+             font-semibold text-gray-800 shadow-lg hover:bg-gray-100 duration-200 "
+             :class="drawer ? 'w-full' : '' ">
+                <ion-icon class="text-2xl text-indigo-800" name="speedometer"></ion-icon>
+                <span class="font-semibold" x-show="drawer">
                     داشبورد
                 </span>
             </a>
 
-            <a class="w-full shadow-md flex items-center gap-4 text-base p-2 rounded-md text-gray-800 bg-gray-100 hover:bg-gray-100 hover:text-indigo-800 duration-200">
+            <a class="flex items-center gap-6 text-base p-2 rounded-md bg-gray-50 
+            hover:scale-95 duration-200  cursor-pointer
+            font-semibold text-gray-800 shadow-lg hover:bg-gray-100 duration-200 "
+            :class="drawer ? 'w-full' : '' ">
+               <ion-icon class="text-2xl text-indigo-800" name="people"></ion-icon>
+               <span class="font-semibold" x-show="drawer">
+                کاربران سایت
+            </span>
+           </a>
+
+            <a class="w-full shadow-md flex items-center gap-4 text-base p-2 rounded-md
+             text-gray-800 bg-gray-100 hover:bg-gray-100 hover:text-indigo-800 duration-200" 
+             :class="drawer ? 'w-full' : '' ">
                 <ion-icon class="text-2xl text-indigo-800" name="people"></ion-icon>
-                <span class="font-semibold">
+                <span class="font-semibold"  x-show="drawer">
                     کاربران سایت
                 </span>
             </a>
-
+{{-- 
             <a class="w-full shadow-md flex items-center gap-4 text-base p-2 rounded-md text-gray-800 bg-gray-100 hover:bg-gray-100 hover:text-indigo-800 duration-200">
                 <ion-icon class="text-2xl text-indigo-800" name="people"></ion-icon>
                 <span class="font-semibold">
@@ -76,7 +91,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
 
         </div>
 
