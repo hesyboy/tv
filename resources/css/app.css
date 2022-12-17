@@ -13,11 +13,18 @@
 @layer base{
 
     @font-face {
-        font-family: 'vazir';
+        font-family: 'vazir-reqular';
         src: url("/admin/assets/fonts/vazirmatn-Regular.ttf");
     }
+    @font-face {
+        font-family: 'vazir-bold';
+        src: url("/admin/assets/fonts/Vazir-Bold-FD.ttf");
+    }
     body{
-        font-family: vazir;
+        font-family: vazir-reqular;
+    }
+    .font-vazir-bold{
+        font-family: vazir-bold;
     }
 
 }

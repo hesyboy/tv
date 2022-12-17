@@ -8,10 +8,10 @@
 </head>
 <body dir="rtl">
     <section class="bg-gray-200 h-screen w-full flex duration-300 transition-all" x-data="{drawer:true}">
-        <section :class="drawer ? 'w-2/12' : 'w-max-auto'">
+        <section :class="drawer ? 'w-[250px]' : 'w-[70px]'">
             @include('admin.layout.sidebar')
         </section>
-        <section  :class="drawer ? 'w-10/12' : 'w-full'">
+        <section  :class="drawer ? 'w-full' : 'w-full'">
             <section class=" bg-gray-50">
                 @include('admin.layout.header')
             </section>
