@@ -12,20 +12,47 @@
 
 @layer base{
 
-    @font-face {
+    /* @font-face {
         font-family: 'vazir-reqular';
-        src: url("/admin/assets/fonts/vazirmatn-Regular.ttf");
+        src: url("/admin-panel/assets/fonts/vazirmatn-Regular.ttf");
     }
     @font-face {
         font-family: 'vazir-bold';
-        src: url("/admin/assets/fonts/Vazir-Bold-FD.ttf");
+        src: url("/admin-panel/assets/fonts/Vazir-Bold-FD.ttf");
     }
     body{
         font-family: vazir-reqular;
     }
     .font-vazir-bold{
         font-family: vazir-bold;
+    } */
+    @font-face {
+        font-family: vazir;
+        src: url('../../public/fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+             url('../../public/fonts/Vazir-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+             url('../../public/fonts/Vazir-Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+             url('../../public/fonts/Vazir-Medium.ttf') format('truetype');
     }
+    body{
+        font-family: vazir!important;
+    }
+
+    .progress:indeterminate::after {
+        -webkit-animation: progress-loading 2s infinite ease-in-out !important;
+        animation: progress-loading 2s infinite ease-in-out !important;
+    }
+
+    @keyframes mymove {
+        50% {background-position-x: 1000px;}
+      }
+
+      .step:before{
+        background-color:#0f172a!important;
+      }
+
+      .step:after{
+        background-color:#0f172a;
+      }
 
 }
 

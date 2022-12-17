@@ -1,14 +1,13 @@
 <div class="p-3">
     <div class="flex justify-between p-2">
         <div class="flex gap-3 items-center">
-            <span @click="drawer=!drawer" class="flex items-center justify-center text-2xl p-2 rounded-md" 
-            :class="drawer ? 'bg-gray-200 text-slate-800' : 'bg-slate-800 text-gray-200' ">
-                <ion-icon name="eye-outline" x-show="!drawer" ></ion-icon>
-                <ion-icon name="eye-off" x-show="drawer"></ion-icon>
+            <span  class="flex items-center justify-center text-2xl p-2 rounded-md"
+            :class="drawer ? 'bg-gray-200 text-slate-800' : 'bg-gray-200 text-gray-200' ">
+                <input type="checkbox" class="toggle toggle-md" checked @click="drawer=!drawer" />
             </span>
             <div class="flex gap-3">
                 <div x-data="{dropdown:false}" class="relative">
-                    <a x-on:click="dropdown=!dropdown" 
+                    <a x-on:click="dropdown=!dropdown"
                     class="flex items-center justify-center text-2xl p-2 bg-gray-200 rounded-md text-indigo-800"
                     :class="dropdown ? 'bg-slate-800 text-gray-200' : 'bg-gray-200 text-slate-800' ">
                         <ion-icon name="notifications" x-show="!dropdown"></ion-icon>
@@ -20,10 +19,10 @@
                     </div>
 
                 </div>
-                <a class="flex items-center justify-center text-2xl p-2 rounded-md" 
+                <a class="flex items-center justify-center text-2xl p-2 rounded-md"
                 @click="dark = !dark" :class="dark ? 'bg-slate-800 text-gray-200' : 'bg-gray-200 text-slate-800' ">
-                    <ion-icon x-show="dark" class="" name="sunny-outline"></ion-icon> 
-                    <ion-icon x-show="!dark" name="moon" class=""></ion-icon> 
+                    <ion-icon x-show="dark" class="" name="sunny-outline"></ion-icon>
+                    <ion-icon x-show="!dark" name="moon" class=""></ion-icon>
                 </a>
             </div>
             <span class="bg-gray-200 p-1 rounded-md flex items-center" >

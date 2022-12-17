@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Panel\PanelController;
+use App\Http\Controllers\Site\SiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin.layout.master');
+// Route::get('/admin', function () {
+//     return view('admin.layout.master');
+// });
+
+
+Route::prefix('/')->group(function () {
+
+    Route::get('/',[SiteController::class,'index'])->name('site.index');
+
+    Route::prefix('admin')->group(function () {
+        Route::get('/', function () {
+            return view('admin.layout.master');
+        })->name('admin.index');
+    });
+
+
+    Route::prefix('panel')->namespace('Panel')->group(function(){
+        Route::get('/',[PanelController::class,'index'])->name('panel.index');
+        Route::get('/history',[PanelController::class,'history'])->name('panel.history');
+        Route::get('/wallet',[PanelController::class,'wallet'])->name('panel.wallet');
+
+    });
 });
+
+
