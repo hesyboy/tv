@@ -1,6 +1,6 @@
 
 
-<div class="py-5 px-3 bg-slate-900">
+<div class="py-3 px-3 bg-primary text-white">
     <div class="flex justify-between items-center container m-auto">
         <div class="text-sm">
           سامانه تخصصی خرید و فروش ارز دیجیتال تتر (Tether | USDT)
@@ -24,7 +24,7 @@
     </div>
 </div>
 
-  <div class="flex justify-between items-center py-4 z-50 container mx-auto text-slate-900">
+  <div class="flex justify-between items-center py-2 z-50 container mx-auto text-slate-900">
 
     <div class="flex items-center gap-10">
 
@@ -65,7 +65,11 @@
     </div>
 
     <div>
-        <button class="btn btn-primary">ورود / عضویت</button>
+        {{-- <button class="btn btn-primary">ورود / عضویت</button> --}}
+        <a class="btn  btn-primary font-normal justify-between gap-2 flex items-center text-base">
+            <span>  ورود / عضویت   </span>
+            <ion-icon name="arrow-forward-outline" class="text-2xl"></ion-icon>
+        </a>
     </div>
 
   </div>

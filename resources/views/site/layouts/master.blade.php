@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"  data-theme="halloween" dir="rtl">
+<html lang="en"  data-theme="mytheme" dir="rtl">
 <head>
     @include('site.layouts.headertags')
     @livewireStyles
 
 </head>
-<body class="bg-slate-900">
+<body class="bg-white text-neutral">
 
-    <div class="bg-slate-100">
+    <div class="bg-slate-50 shadow-lg">
         <div class=" ">
             @include('site.layouts.header')
         </div>
@@ -17,7 +17,7 @@
         @yield('body')
     </div>
 
-    <div class="bg-slate-800 py-5">
+    <div class="bg-primary py-5">
         <div class="container mx-auto">
             قیمن و نومودار های نحظه ای
         </div>
