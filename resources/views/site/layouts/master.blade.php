@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en"  data-theme="mytheme" dir="rtl">
 <head>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <script src="{{ asset('js/app.js') }}" defer></script>
     @include('site.layouts.headertags')
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
     @livewireStyles
 
 </head>
@@ -15,6 +18,7 @@
 
     <div>
         @yield('body')
+        {{-- {{ $slot }} --}}
     </div>
 
     <div class="bg-primary py-5">

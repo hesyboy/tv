@@ -64,12 +64,16 @@
 
     </div>
 
-    <div>
-        {{-- <button class="btn btn-primary">ورود / عضویت</button> --}}
+    <div class="flex gap-3">
         <a class="btn  btn-primary font-normal justify-between gap-2 flex items-center text-base">
             <span>  ورود / عضویت   </span>
             <ion-icon name="arrow-forward-outline" class="text-2xl"></ion-icon>
         </a>
+        <a class="btn  btn-primary font-normal justify-between gap-2 flex items-center text-base">
+          <span>  ورود / عضویت   </span>
+          <ion-icon name="arrow-forward-outline" class="text-2xl"></ion-icon>
+      </a>
+      {{-- <livewire:test key="{{ now() }}" :flag="$flag" /> --}}
     </div>
 
   </div>
