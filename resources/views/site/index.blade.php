@@ -486,14 +486,15 @@ min-height: 450px;">
                 </p>
 
 
-                <div class="w-full flex gap-3 justify-between items-center">
-                    <a class="btn  btn-primary font-normal justify-between gap-1 flex items-center">
-                        <ion-icon name="bag-handle-outline" class="text-3xl"></ion-icon>
-                        <span>خرید آنلاین </span>
-                    </a>
-                    <div class="btn btn-secondary font-normal ">
+                <div class="w-full flex flex-col gap-1 justify-between items-center">
+                    <div class="text-primary font-bold text-lg ">
                         20،600،000 تومان
                     </div>
+                    <a class="w-full text-lg btn  btn-primary font-normal justify-center gap-1 flex items-center">
+                        {{-- <ion-icon name="bag-handle-outline" class="text-3xl"></ion-icon> --}}
+                        <span>خرید آنلاین </span>
+                    </a>
+
                 </div>
 
             </div>

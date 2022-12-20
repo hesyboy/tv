@@ -49,7 +49,9 @@ module.exports = {
           xl: '1300px',
         },
       },
-    extend: {},
+    extend: {
+
+    },
   },
   plugins: [require("daisyui")],
 }
