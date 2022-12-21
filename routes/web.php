@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Livewire\Site\HomePage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', HomePage::class);
+Route::get('/', function () {
+    return view('site.index');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
