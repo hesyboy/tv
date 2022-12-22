@@ -3,21 +3,22 @@
 <div class="py-3 px-3 bg-slate-800 text-white">
     <div class="flex justify-between items-center container m-auto">
         <div class="text-sm">
-          سامانه تخصصی خرید و فروش ارز دیجیتال تتر (Tether | USDT)
-       </div>
+            سامانه هوشمند تبلیغات در گوگل Google Ads
+        </div>
        <div class="text-sm flex gap-3">
         {{-- <div>
             بروز شده در 30 ثانیه پیش
         </div> --}}
             <div class="flex gap-3">
                 <span class="flex items-center gap-1">
-                    <span>قیمت فروش : 32،300 </span>
-                    <span><ion-icon name="arrow-up-outline" class="text-emerald-500"></ion-icon></span>
+                    <span class="text-xs">تعرفه لحظه ای گوگل ادز  :</span>
+                    <span class=""> 48،300 تومان / دلار</span>
+                    {{-- <span><ion-icon name="arrow-up-outline" class="text-emerald-500"></ion-icon></span> --}}
                 </span>
-                <span class="flex items-center gap-1">
+                {{-- <span class="flex items-center gap-1">
                     <span>قیمت خرید : 31،100 تومان</span>
                     <span><ion-icon name="arrow-down-outline" class="text-red-500"></ion-icon></span>
-                </span>
+                </span> --}}
             </div>
 
         </div>
@@ -36,10 +37,10 @@
         </div>
 
         <div>
-            <div class="flex-none">
-                <ul class="menu menu-horizontal p-0 font-semibold">
+            <div class="">
+                <ul class="flex flex-col md:flex-row font-semibold gap-5">
                   <li><a>صفحه اصلی</a></li>
-                  <li><a>تعرفه ها</a></li>
+                  <li><a> قیمت و تعرفه</a></li>
                   {{-- <li tabindex="0">
                     <a>
                       Parent
@@ -50,7 +51,7 @@
                       <li><a>Submenu 2</a></li>
                     </ul>
                   </li> --}}
-                  <li><a>آموزش   </a></li>
+                  <li><a>آموزش کار با پنل  </a></li>
                 <li>
                     <a class="relative w-24 ml-3">
                     <span>پشتیبانی</span>
@@ -65,13 +66,13 @@
     </div>
 
     <div class="flex gap-3">
-        <a class="btn-befault font-normal justify-between gap-2 flex items-center text-base">
-            <ion-icon name="cart-outline" class="text-3xl"></ion-icon>
+        <a class="btn-befault font-normal justify-between gap-2 flex items-center">
+            <ion-icon name="cart-outline" class="text-2xl"></ion-icon>
             <span>  سبد خرید  </span>
         </a>
-        <a class="btn  btn-primary font-normal justify-between gap-2 flex items-center text-base">
+        <a class="btn-primary font-normal justify-between gap-2 flex items-center">
           <span>  ورود / عضویت   </span>
-          <ion-icon name="arrow-forward-outline" class="text-2xl"></ion-icon>
+          {{-- <ion-icon name="arrow-forward-outline" class="text-2xl"></ion-icon> --}}
       </a>
       {{-- <livewire:test key="{{ now() }}" :flag="$flag" /> --}}
     </div>

@@ -41,7 +41,10 @@
         <div class="container mx-auto my-5">
 
             <div class="flex gap-3 justify-between  py-8 rounded-2xl items-center">
-                <div class=" w-3/6 flex flex-col gap-6 py-3">
+                <div class="w-5/12">
+                    <img src="https://afrak.com/wp-content/uploads/2022/03/Bita-Ads-min.png" alt="" srcset="">
+                </div>
+                <div class=" w-7/12 flex flex-col gap-6 py-3">
 
 
                     <div>
@@ -55,7 +58,7 @@
 
                     <p class=" text-3xl leading-10 font-semibold">
                         <span> تبلیغات در گوگل ادوردز  با  </span>
-                        <span class="text-primary">تلوینو ادز </span>
+                        <span class="text-primary">تلوینو  </span>
                     </p>
                     <p class=" text-lg leading-10">
                         با تبلیغات در گوگل سایتتان را به کاربران درست در زمان درست نشان دهید. افراک پریمیر
@@ -65,13 +68,13 @@
                         {{-- <span class="bg-secondary font-normal text-lg p-2 rounded-md text-white leading-none flex items-center">
                             Google Ads Marketing
                         </span> --}}
-                        <a class="btn-befault  justify-between gap-2 flex items-center text-lg">
-                            <ion-icon name="bulb-outline" class="text-4xl"></ion-icon>
-                            <span>مشاوره رایگان     </span>
+                        <a class="btn-befault  justify-between gap-2 flex items-center">
+                            <span>تعرفه تبلیغات در گوگل      </span>
+                            {{-- <ion-icon name="bulb-outline" class="text-3xl"></ion-icon> --}}
                         </a>
-                        <a class="btn  btn-primary font-normal justify-between gap-2 flex items-center text-lg">
+                        <a class="btn-primary justify-between gap-2 flex items-center">
                             <span>شروع تبلیغ در گوگل  </span>
-                            <ion-icon name="arrow-forward-outline" class="text-2xl"></ion-icon>
+                            {{-- <ion-icon name="arrow-forward-outline" class="text-2xl"></ion-icon> --}}
                         </a>
 
                     </div>
@@ -90,9 +93,7 @@
                         </li>
                     </ul> --}}
                 </div>
-                <div class="w-3/6">
-                    <img src="https://afrak.com/wp-content/uploads/2022/03/Bita-Ads-min.png" alt="" srcset="">
-                </div>
+
             </div>
 
         </div>

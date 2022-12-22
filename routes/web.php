@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Panel\PanelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('site.index');
+Route::get('/',[SiteController::class,'index'])->name('site.index');
+
+
+//panel
+
+Route::prefix('panel')->namespace('Panel')->group(function(){
+    Route::get('/',[PanelController::class,'index'])->name('panel.index');
+    Route::get('/history',[PanelController::class,'history'])->name('panel.history');
+    Route::get('/wallet',[PanelController::class,'wallet'])->name('panel.wallet');
+
 });
+
+Route::get('/admin',[PanelController::class,'index'])->name('admin.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
